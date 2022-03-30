@@ -26,6 +26,7 @@ var spelerY = 360; // y-positie van speler
  */
 var beweegAlles = function () {
   // speler
+  
 
   // vijand
 

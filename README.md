@@ -2,11 +2,12 @@ Deze game is gebaseerd op het template voor 4HV van het Emmauscollege Rotterdam
 
 ## Mijn spel: *naam van het spel*
 Gemaakt door:
-- *naam van leerling 1*
-- *naam van leerling 2*
+- *Friso Drees*
+- *Thijs Mercij*
 
 ### Beschrijving
-*korte beschrijving van het spel, wat je kunt doen in het spel, wat het doel is*
+*racen met het onwijken van obstakel
+*
 
 ## Mijn planning
 Werk de planning af van boven naar beneden<br>
@@ -21,6 +22,19 @@ Basis: uitleg, spelen, afgaan en punten
         - Zet je code in de functie beweegAlles()
         - Kies de afmeting van speler
         - Gebruik variabalen spelerX en spelerY als middelpunt van de speler
+        - naar links en rechts met border
+        - obstakel tekenen
+        - obstakel bewegen
+        - nieuw obstakel als oude weg is
+
+  [ ] 4. gameover
+       - botsing met obstakel
+       - eindscherm
+
+  [ ] 5. punten
+       - tijd bijhouden
+       - tijd op scherm
+  
 - [ ] 4. *(pas de volgende stappen in de planning zelf aan)*
 - [ ] x. teken je tegenspeler (vijanden of dingen die je moet pakken of doelen of ...)
 - [ ] x. teken een bal, kogel (als die in je spel zit)
@@ -32,13 +46,13 @@ Basis: uitleg, spelen, afgaan en punten
 - [ ] x. maak uitlegscherm
 
 ### Uitbreidingen 1
-Uitbreiding: *bedenk iets, bijvoorbeeld meer tegenstanders*
+Uitbreiding: perspectief,*
 - [ ] *later uitwerken*
 - [ ] *later uitwerken*
 - [ ] *later uitwerken*
 
 ### Uitbreidingen 2
-Uitbreiding: *bedenk iets, bijvoorbeeld bewegende achtergrond*
+Uitbreiding: *meerdere blokken*
 - [ ] *later uitwerken*
 - [ ] *later uitwerken*
 - [ ] *later uitwerken*
