@@ -26,11 +26,19 @@ var spelerY = 360; // y-positie van speler
  */
 var beweegAlles = function () {
   // speler
-  
+  const KEY_UP = 87
+const KEY_DOWN = 83
+const KEY_LEFT = 65
+  const KEY_RIGHT = 68
+
+  spelerX=spelerX -1;
+if (ketIsDown(KEY_A))
 
   // vijand
 
   // kogel
+
+
 };
 
 /**
@@ -52,7 +60,9 @@ var verwerkBotsing = function () {
  */
 var tekenAlles = function () {
   // achtergrond
-
+fill("green")
+  rect(0,0,1280,720)
+  
   // vijand
 
   // kogel
