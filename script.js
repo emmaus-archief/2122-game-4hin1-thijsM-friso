@@ -32,7 +32,7 @@ const KEY_LEFT = 65
   const KEY_RIGHT = 68
 
   spelerX=spelerX -1;
-if (ketIsDown(KEY_A))
+if (keyIsDown(KEY_A))
 
   // vijand
 
