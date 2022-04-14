@@ -26,14 +26,16 @@ var spelerY = 360; // y-positie van speler
  */
 var beweegAlles = function () {
   // speler
-  
+ if (keyIsDown(65)) {
+  spelerX = spelerX -1;
+ }
   // vijand
 
   // kogel
 
 
 };
-
+0
 /**
  * Checkt botsingen
  * Verwijdert neergeschoten dingen
@@ -41,7 +43,11 @@ var beweegAlles = function () {
  */
 var verwerkBotsing = function () {
   // botsing speler tegen vijand
-
+if (spelerX - vijandX < 50 &&
+   spelerX - vijandX > -50 &&
+    spelerY  === vijandY)
+  aantal = aantal + 1;
+  console.log("botsing"+aanatal)
   // botsing kogel tegen vijand
 
   // update punten en health
