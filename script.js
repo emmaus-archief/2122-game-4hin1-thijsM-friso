@@ -63,7 +63,13 @@ if (keyIsDown(KEY_RIGHT)) {
  */
 var verwerkBotsing = function () {
   // botsing speler tegen vijand
- 
+  if (spelerX - vijandX <50 &&
+      spelerX - vijandX >-50 &&
+      spelerY - vijandY <50 &&
+      spelerY - vijandY >-50) {
+      console.log("Botsing");
+      }
+    
   // botsing kogel tegen vijand
 
   // update punten en health
@@ -75,7 +81,7 @@ var verwerkBotsing = function () {
  */
 var tekenAlles = function () {
   // achtergrond
-fill("green")
+  fill("green")
   rect(0,0,1280,720);
   // vijand
 fill("red");
