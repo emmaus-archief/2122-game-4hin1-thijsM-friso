@@ -105,6 +105,7 @@ fill("red");
  */
 var checkGameOver = function () {
   // check of HP 0 is , of tijd op is, of ...
+
   return false;
 };
 
