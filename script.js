@@ -22,7 +22,9 @@ var spelerX = 640; // x-positie van speler
 var spelerY = 360; // y-positie van speler
 
 var vijandX = 600;
-var vijandY = 500
+var vijandY = 500;
+
+let img; //plaatje
 /* ********************************************* */
 /* functies die je gebruikt in je game           */
 /* ********************************************* */
@@ -84,9 +86,8 @@ var tekenAlles = function () {
   fill("green")
   rect(0,0,1280,720);
   // vijand
-fill("red");
-  rect( vijandX - 25, vijandY - 25, 50, 50);
-  ellipse(vijandX, vijandY, 10, 10);
+
+  image(img, vijandX-25, vijandY-25, 50, 50);
   // kogel
 
   // speler
@@ -105,14 +106,15 @@ fill("red");
  */
 var checkGameOver = function () {
   // check of HP 0 is , of tijd op is, of ...
-
   return false;
 };
 
 /* ********************************************* */
 /* setup() en draw() functies / hoofdprogramma   */
 /* ********************************************* */
-
+function preload() {
+  img = loadImage('steen.png');
+}
 /**
  * setup
  * de code in deze functie wordt één keer uitgevoerd door
