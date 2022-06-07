@@ -12,6 +12,7 @@
 
 const SPELEN = 1;
 const GAMEOVER = 2;
+const UITLEG = 8;
 var spelStatus = SPELEN;
 const KEY_LEFT = 37;
 const KEY_RIGHT = 39;
@@ -87,7 +88,7 @@ var tekenAlles = function () {
   rect(0,0,1280,720);
   // vijand
 
-  image(img, vijandX-25, vijandY-25, 50, 50);
+  image(img, vijandX-25, vijandY-25, 150, 150);
   // kogel
 
   // speler
@@ -105,7 +106,13 @@ var tekenAlles = function () {
  * anders return false
  */
 var checkGameOver = function () {
-  // check of HP 0 is , of tijd op is, of ...
+  if (spelerX - vijandX <50 &&
+      spelerX - vijandX >-50 &&
+      spelerY - vijandY <50 &&
+      spelerY - vijandY >-50) {
+      console.log("Botsing");  
+    return true;
+  }
   return false;
 };
 
@@ -113,7 +120,7 @@ var checkGameOver = function () {
 /* setup() en draw() functies / hoofdprogramma   */
 /* ********************************************* */
 function preload() {
-  img = loadImage('steen.png');
+  img = loadImage('autoML.png');
 }
 /**
  * setup
@@ -141,10 +148,25 @@ function draw() {
     if (checkGameOver()) {
       spelStatus = GAMEOVER;
     }
+    console.log("spelen");
   }
   if (spelStatus === GAMEOVER) {
     // teken game-over scherm
-
+console.log("game over");
+ textSize(69);
+fill("white");
+    text("game over, druk spatie voor start", 300, 300);
+   if (keyIsDown(32)) {
+     spelerX = 400;
+     spelStatus = SPELEN;
+   }
   }
+if (spelStatus === UITLEG) {
+  // teken uitleg game-over
+console.log("uitleg");
+
+}
+  
+
 }
   
