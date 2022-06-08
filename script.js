@@ -88,7 +88,7 @@ var tekenAlles = function () {
   rect(0,0,1280,720);
   // vijand
 
-  image(img, vijandX-25, vijandY-25, 150, 150);
+  image(img, vijandX-40, vijandY-60, 100, 100);
   // kogel
 
   // speler
@@ -120,7 +120,7 @@ var checkGameOver = function () {
 /* setup() en draw() functies / hoofdprogramma   */
 /* ********************************************* */
 function preload() {
-  img = loadImage('autoML.png');
+  img = loadImage('steen.png');
 }
 /**
  * setup
@@ -155,7 +155,7 @@ function draw() {
 console.log("game over");
  textSize(69);
 fill("white");
-    text("game over, druk spatie voor start", 300, 300);
+    text("game over, druk spatie voor start", 190, 300);
    if (keyIsDown(32)) {
      spelerX = 400;
      spelStatus = SPELEN;
