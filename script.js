@@ -24,8 +24,10 @@ var spelerY = 360; // y-positie van speler
 var vijandX = 600;
 var vijandY = 500;
 
+
 let img; //plaatje
 let img2; //plaatje 2
+let img3; //plaatje 3
 /* ********************************************* */
 /* functies die je gebruikt in je game           */
 /* ********************************************* */
@@ -58,7 +60,7 @@ if (keyIsDown(KEY_RIGHT)) {
 
 
 };
-0
+
 /**
  * Checkt botsingen
  * Verwijdert neergeschoten dingen
@@ -84,8 +86,14 @@ var verwerkBotsing = function () {
  */
 var tekenAlles = function () {
   // achtergrond
- fill('blue')
-  rect(0,0,1280,720);
+  fill('black');
+  rect(0, 0, 1280, 720);
+  fill('white');
+  rect(550, 310, 200, 50);
+  fill('white');
+  rect(100, 310, 200, 50);
+  fill('white');
+  rect(1000, 310, 200, 50);
   // vijand
 
   image(img, vijandX-40, vijandY-60, 100, 100);
@@ -94,7 +102,7 @@ var tekenAlles = function () {
   // speler
   
 
-  image(img2, spelerX-90, spelerY-40, 130, 80);
+  image(img2, spelerX-60, spelerY-40, 100, 100);
   // punten en health
 
 };
@@ -118,8 +126,9 @@ var checkGameOver = function () {
 /* setup() en draw() functies / hoofdprogramma   */
 /* ********************************************* */
 function preload() {
-  img = loadImage('steen.png');
+  img = loadImage('car.png');
   img2 = loadImage('auto.png');
+  img3 = loadImage('weg.png');
 }
 /**
  * setup
@@ -131,7 +140,7 @@ function setup() {
   createCanvas(1280, 720);
 
   // Kleur de achtergrond blauw, zodat je het kunt zien
-  background('green');
+   background('black');
 }
 
 /**
