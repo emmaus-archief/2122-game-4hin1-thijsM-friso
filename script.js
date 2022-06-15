@@ -57,7 +57,13 @@ if (keyIsDown(KEY_RIGHT)) {
   // vijand
 
   vijandX = vijandX -10;
-  
+
+  if (vijandX=0); {
+    vijandX=1280
+  }
+
+
+ 
   // kogel
 
 
