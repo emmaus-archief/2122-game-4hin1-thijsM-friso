@@ -56,6 +56,8 @@ if (keyIsDown(KEY_RIGHT)) {
   }
   // vijand
 
+  vijandX = vijandX -10;
+  
   // kogel
 
 
