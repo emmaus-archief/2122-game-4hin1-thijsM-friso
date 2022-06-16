@@ -289,9 +289,9 @@ function draw() {
   if (spelStatus === GAMEOVER) {
     // teken game-over scherm
 console.log("game over");
- textSize(69);
+ textSize(50);
 fill("white");
-    text("gecrashed, druk op spatie om opnieuw te proberen", 190, 300);
+    text("gecrashed, druk op spatie om opnieuw te proberen", 100, 250);
    if (keyIsDown(32)) {
      spelerX = 400;
      vijandX1 = 1280;
